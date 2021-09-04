@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project79</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="main.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Pizzaria</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#viewmenu">View Menu</a></li>
+        <li><a href="#addmenu">Add Menu</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="container">
+    <input type="button" value="Show Menu" onclick="showmenu()">
+<div id="viewmenu">
+<h3 id="listmenu"></h3>
+<img width="1000" height="1000" src="https://thumbs.dreamstime.com/b/italian-pepperoni-pizza-thick-pie-crust-spicy-sausage-mozzarella-tomato-isolated-white-viewed-whole-80010925.jpg">
+</div>
+<div id="addmenu">
+  <input type="text" placeholder="Add Menu" id="addmenutextbox">
+  <input type="button" value="Add Menu" onclick="addmenu()" id="buttonaddmenu">
+  <h3 id="updatedlistmenu"></h3>
+</div>
+</div>
